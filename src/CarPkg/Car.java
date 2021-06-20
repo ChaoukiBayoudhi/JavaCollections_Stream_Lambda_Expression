@@ -1,3 +1,5 @@
+package CarPkg;
+
 import java.util.Objects;
 
 public class Car {
@@ -5,9 +7,9 @@ public class Car {
     private String constructor;
     private int enginePower;
     private String color;
+    private double price;
 
-    public Car() {
-    }
+
 
     public String getCode() {
         return code;
@@ -41,6 +43,14 @@ public class Car {
         this.color = color;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -61,6 +71,7 @@ public class Car {
                 ", constructor='" + constructor + '\'' +
                 ", enginePower=" + enginePower +
                 ", color='" + color + '\'' +
+                ", price=" + price +
                 '}';
     }
 }
